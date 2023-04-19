@@ -1,0 +1,623 @@
+:root {
+    --black: #0b0c17;
+    --flamingo: #ff3571;
+    --lightgray: #ddd;
+    --blue: #3c30ff;
+    --white: #fff;
+    --trueblack: #000;
+    --paddinggeneral: 1rem 10rem 1rem 10rem;
+    --margingeneral: 3rem 3rem 3rem 3rem;
+    --big: clamp(7rem, 7.5rem, 8rem);
+    --mediumbig: clamp(5.5rem, 6rem, 6.5rem);
+    --pnormal: clamp(1.2rem, 1.4rem, 2rem);
+    --psmaller: clamp(1.5rem, 1.8rem, 2rem);
+    --lineheightnormal: 3rem;
+    --mediumbold: clamp(1.5rem, 1.8rem, 2rem);
+}
+
+@font-face {
+    font-family: NewYork;
+    src: url(./fonts/NewYork/NewYork\ PERSONAL\ USE.otf);
+}
+
+@font-face {
+    font-family: Euclid;
+    src: url(./fonts/EuclidCircular/Euclid\ Circular\ A\ Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Euclid;
+    src: url(./fonts/EuclidCircular/Euclid\ Circular\ A\ Medium.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Euclid;
+    src: url(./fonts/EuclidCircular/Euclid\ Circular\ A\ Bold\ Italic.ttf);
+    font-weight: 700;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #272422;
+}
+
+.wrapper {
+    background-color: #272422;
+    min-height: 100vh;
+}
+
+header {
+    background-image: url(./img/19.png);
+    background-position: 50% 0%;
+    background-size: 67.29vw;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    border-bottom: 1px solid rgb(51, 51, 55);
+    background-color: #272422;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+font-family: 'Euclid';
+font-weight: 600;
+font-size: 14px;
+text-transform: uppercase;
+color: #FFFFFF;
+text-decoration: none;
+display: inline-block;
+font-size: var(--pnormal);
+padding-right: 20px;
+padding-left: 20px;
+transition: 300ms color;
+}
+
+nav a:hover {
+    color:#e8bf96;
+    transition: 300ms color;
+}
+
+section.head_jumbotron{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    height: inherit;
+    text-align: center;
+    z-index: 20;
+    position: relative;
+    padding-top: 5vw;
+}
+
+.jumbotron_double_container {
+    position: relative;
+    padding-bottom: 29.81vw;
+    background-image: url(./img/14.png);
+    background-position: 100% 73%;
+    background-size: 5.290000000000006vw;
+    background-repeat: no-repeat;
+}
+
+.special_head {
+    width: 44.79vw;
+}
+
+.special_head span {
+    color: #e8bf96;
+}
+
+a.btn_special {
+    padding: 3.8rem 4.1rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'NewYork', sans-serif;
+    font-size: 10.41vw;
+    font-weight: 400;
+    color: #fff;
+    line-height: 0.9em;
+}
+
+h3 {
+    padding-bottom: 1.04vw;
+    font-size: 5.2vw;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: "NewYork";
+}
+
+h4 {
+    font-size: 2.08vw;
+    line-height: 1.15em;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'NewYork', sans-serif;
+}
+
+.subtitle {
+    max-width: 23.4vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5vh;
+}
+
+.z-indexed-header-bg {
+    display: grid;
+    justify-content: space-between;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    left: 0%;
+    right: 0%;
+    z-index: 10;
+}
+
+.video {
+    width: 20.78vw;
+    height: 29.06vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-self: start;
+}
+
+.left .leftimg {
+    width: 15.625vw;
+    height: 23.48vw;
+    margin-top: 12.27vw;
+}
+
+.left_under_img {
+    display: flex;
+    gap: 5rem;
+    color: white;
+    font-family: 'Euclid';
+    font-size: 1.25vw;
+    padding-top: 4.98vw;
+}
+
+.middle {
+    margin-left: auto;
+    margin-right: auto;
+    position:relative;
+}
+
+.middle .middle-img {
+    position: relative;
+    width: 13.02vw;
+    height: 16.66vw;
+    margin-top: 41.66vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img.cover {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+img.image_decoration {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: auto;
+    bottom: auto;
+    width: 2.1vw;
+    height: auto;
+    margin-top: -2.5vw;
+    margin-left: -2vw;
+}
+
+.right {
+    place-self: end;
+    align-self: start;
+}
+
+.right .text {
+    width: 14vw;
+    font-size: 16px;
+    margin-right: 2.08vw;
+    margin-left: auto;
+    padding-top: 11.71vw;
+    color: #999;
+    line-height: 1.55em;
+    font-weight: 400;
+    font-family: 'Euclid';
+}
+
+.right .text span {
+    color: white;
+}
+
+.z-indexed-wrapper {
+    width: 67.18vw;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    left: 0%;
+    top: 5vh;
+    right: 0%;
+    bottom: auto;
+}
+
+section.checkoutwork {
+    width: 67.18vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section.checkoutwork .wrappers2 {
+    border-top: 1px solid #3f3a36;
+    border-bottom: 1px solid #3f3a36;
+    padding-top: 5.78vw;
+    padding-bottom: 7.86vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+h3.title {
+    width: 43.43vw;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+    text-align: center;
+    font-family: "NewYork";
+    line-height: 1.1em;
+}
+
+p.s2text {
+    width: 32.81vw;
+    margin-right: auto;
+    margin-left: auto;
+    color: #999;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1.55em;
+    font-weight: 400;
+    font-family: "Euclid"
+}
+
+.btn {
+    display: flex;
+    width: 9.89vw;
+    height: 4.68vw;
+    color: #fff;
+    font-size: 0.833vw;
+    text-decoration: none;
+    border: 1px solid #3c3636;
+    border-radius: 60%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vh;
+    transition: 300ms ease all;
+    font-family: "Euclid"
+}
+
+.btn:hover {
+    border: 1px solid #e8bf96;
+    background-color: #e8bf96;
+    color: #121212;
+    transform: translate(+10px, +10px);
+    transition: 300ms ease all;
+}
+
+section.selectedwork {
+    width: 67.18vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5.72vw;
+    padding-bottom: 7.29vw;
+}
+
+section.selectedwork .wrapper3 {
+    display: flex;
+    flex-direction: column;
+}
+
+section.selectedwork .wrapper3 .wrapper3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.subwrap {
+    display: flex;
+}
+
+.wrapper3 .wrapper3 p {
+    color: #999;
+    line-height: 1.3em;
+    margin-left: 2.08vw;
+    width: 26vw;
+    font-family: "Euclid";
+    font-size: 1.6rem;
+}
+
+section.selectedwork h3 {
+    max-width: 23.36vw;
+}
+
+.bordertop {
+    border-top: 1px solid white;
+    width: 9.89vw;
+    height: 1px;
+    margin-top: 0.7vw;
+    background-color: #fff;
+    margin-left: 5.72vw;
+}
+
+.btn-wrap {
+    justify-self: end;
+    align-self: center;
+}
+
+section.showcase {
+    width: 67.18vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrappershowcase {
+display: grid;
+grid-auto-columns: 1fr;
+grid-column-gap: 16px;
+grid-row-gap: 16px;
+-ms-grid-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr;
+-ms-grid-rows: auto;
+grid-template-rows: auto; 
+justify-items: end;
+padding-bottom: 16vh;
+}
+
+.wrappershowcase a, .wrappershowcase2 a {
+text-decoration: none;
+    }
+
+.hovereport {
+    width: 20vw;
+    color: white;
+    font-family: "NewYork";
+    padding: 5rem 5rem;
+    opacity: 0;
+    transition: 300ms ease-in all;
+    transform: translateY(-3rem);
+} 
+
+
+.hovereport p {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: "NewYork";
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hovereport p.name {
+    color: #fff;
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    font-family: "NewYork";
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wrappershowcase2 {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto; 
+    justify-items: start;
+    }
+
+.largerimg {
+    position: relative;
+    overflow: hidden;
+    width: 34.37vw;
+    height: 46.87vw;
+    background-image: url(./img/1.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 300ms ease-in all;
+}
+
+.largerimg:hover .hovereport, .smallerimg:hover .hovereport, .largerimg2:hover .hovereport, .smallerimg2:hover .hovereport {
+    opacity: 1;
+    transition: 300ms ease-in all;
+    transform: translateY(0rem);
+}
+
+.smallerimg {
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+    width: 22.91vw;
+    height: 31.25vw;
+    background-image: url(./img/2.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.largerimg2 {
+    position: relative;
+    overflow: hidden;
+    width: 34.37vw;
+    height: 46.87vw;
+    background-image: url(./img/5.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.smallerimg2 {
+    grid-column-start: span 1;
+    grid-column-end: span 1;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+    width: 22.91vw;
+    height: 31.25vw;
+    background-image: url(./img/4.jpeg);
+    background-position: 50% 50%;
+    background-size: cover;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section.services {
+    width: 67.18vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service_bar {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    margin-top: 10vh;
+    border-bottom: 1px solid #3f3a36;
+    color: #fff;
+    font-size: 0.93vw;
+    font-weight: 500;
+    padding-bottom: 2vh;
+    font-family: "Euclid"
+}
+
+.gridder {
+    display: grid;
+    padding-top: 4.68vw;
+    padding-bottom: 7.44vw;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    border-bottom: 1px solid #3f3a36;
+}
+
+.midmenu {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 5rem;
+}
+
+.midmenu p.submidmenu {
+    color: #999;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Euclid"
+}
+
+.midmenu a {
+    font-family: "NewYork";
+    color: #fff;
+    font-size: 5.2vw;
+    line-height: 1.1em;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 300ms ease all;
+}
+
+.midmenu a:hover {
+    color:#e8bf96;
+    transition: 300ms ease all;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    opacity: 0;
+}
+
+.img-cover2, .img-cover3, .img-cover4 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+.btmleft {
+    width: 17.18vw;
+    align-self: end;
+    position: relative;
+}
+
+.topright {
+    display: flex;
+    flex-direction: column;
+}
+
+.tr_wrap{
+    width: 11.45vw;
+    height: 14.84vw;
+    align-self: end;
+}
+
+.costume a:hover .btmleft .img-cover {
+    opacity:1;
+}
